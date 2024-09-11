@@ -23,7 +23,7 @@
 		<br>
 		<li> <a href="./second.html" title="Вторая страница"> 9) Относительная ссылка в текущем </a> </li>
 		<br>
-		<li> <a href="./about/first.html" title="Иная страница"> 10) Ссылка на страницу в каталоге about</li>
+		<li> <a href="./about/first.html" title="Иная страница"> 10) Ссылка на страницу в каталоге about </a> </li>
 		<br>
 		<li> 
 			<a>13) Кубанский государственный университет, сокращённо КубГУ — одно из ведущих высших учебных заведений, расположенное в <a href="https://ru.wikipedia.org/wiki/Краснодар" target="_blank">Краснодаре </a>. Является одним из крупнейших и старейших университетов юга России. </a> 
@@ -42,7 +42,7 @@
 		<br>
 		<li> <a href="" target="_blank"> 16) Пустой href </a> </li>
 		<br>
-		<li> <a title="Точно не ссылка"></a> 17) Ссылка без href</li>
+		<li> <a title="Точно не ссылка"> 17) Ссылка без href </a> </li>
 		<br>
 		<li> <a href="second.html" title="Вторая страница" rel="nofollow"> 18) Ссылка, по которой запрещён переход поисковикам </a> </li>
 		<br>
@@ -62,11 +62,51 @@
 		<br>
 		<li> <a href="ftp://username:password@ftp.site.ru:21/file.html" title="Какой-то файл"> 21) Ссылка на файл на сервере FTP с авторизацией </a></li>
 		<br>
+	<li style="margin-left: 20px">
+        Форма
+        <form id="forma">
+            <div> <input type="text" name="Name" placeholder="ФИО"> </div> <br>
+            <div> <input type="tel" name="Phone" placeholder="Телефон"> </div> <br>
+            <div> <input type="email" name="Email" placeholder="Адрес электронной почты"> </div> <br>
+            <div> <input type="date" name="Date"> </div> <br>
+            <div>
+                <div> Пол </div>
+                <label>
+                    <input type="radio" name="Gender">
+                    Мужской
+                </label>
+                <label>
+                    <input type="radio" name="Gender">
+                    Женский
+                </label>
+                </div>
+            <br>
+            <div>
+                <div> Любимый язык программирования </div>
+                <select name="ProgLang" size="6" multiple="">
+                    <option value="Pascal"> Pascal </option>
+                    <option value="C"> C </option>
+                    <option value="C++"> C++ </option>
+                    <option value="JavaScript"> JavaScript </option>
+                    <option value="PHP"> PHP </option>
+                    <option value="Python"> Python </option>
+                    <option value="Java"> Java </option>
+                    <option value="Haskel"> Haskel </option>
+                    <option value="Clojure"> Clojure </option>
+                    <option value="Prolog"> Prolog </option>
+                    <option value="Scala"> Scala </option>
+                </select>
+            </div>
+            <br>
+            <textarea name="Bio" placeholder="Биография" cols="40" rows="10"></textarea>
+            <div>
+                <input type="checkbox" name="Check" id="Kontrakt">
+                <label for="Kontrakt"> С контрактом ознакомлен(а) </label>
+            </div>
+            <br>
+            <div> <button type="submit"> Сохранить </button> </div>
+        </form>
+    </li>
 	</ul>
-
-	<form id="forma">
-		123
-	</form>
-
 </body>
 </html>
