@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Main Site</title>
 </head>
 <body>
-	<ul>
-		<li> <a href="http://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 1) КУБГУ </a> </li>
-		<li> <a href="https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 2) КУБГУ в протоколе https </a></li>
-		<li> <a>3) Ссылка-изображение:  </a> <a href = "https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> <br> <img src="image.jpg" alt="Цветочек" width="400"> </a> </li>
-		<li> <a href="/second.html" title="Вторая страница"> 4) Внутренняя страница</a></li>
-		<li> <a href="#forma"> 6) Фрагмент текущей страницы (Форма снизу) </a> </li>
-		<li> <a href="second.html?utm_source=kubsu&ewkere=123&kokakola=150" title="Вторая страница">7) Точно ссылка с параметрами </a> </li>
-		<li> <a href="second.html?id=111" title="Вторая страница"> 8) Ссылка с id в URL </a> </li>
-		<li> <a href="./second.html" title="Вторая страница"> 9) Относительная ссылка в текущем каталоге</a> </li>
-		<li> <a href="./about/first.html" title="Иная страница"> 10) Ссылка на страницу в каталоге about </a> </li>
-		<li> 
+    <header id="header">
+        <div class="content">
+            <img src="logo.png" class="img" title="Логотип сайта">
+            <nav id="nav">
+                <div> <a href="https://ru.wikipedia.org/wiki/Краснодар" title="Краснодар"> Ссылка меню 1 </a> </div>
+                <div> <a href="https://ru.wikipedia.org/wiki/Россия" title="Россия"> Ссылка 2</a> </div>
+                <div> <a href="https://ru.wikipedia.org/wiki/Москва" title="Москва"> Ссылка 3</a> </div>
+            </nav>
+            <div class="nazv"> <p>Название сайта </p> </div>
+        </div>      
+    </header>
+    <div class="content">
+        <div class="vse">
+            <ul>
+                <li> <a href="http://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 1) КУБГУ </a> </li>
+                <li> <a href="https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 2) КУБГУ в протоколе https </a></li>
+                <li> <a>3) Ссылка-изображение:  </a> <a href = "https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> <br> <img src="image.jpg" alt="Цветочек" width="400"> </a> </li>
+                <li> <a href="/second.html" title="Вторая страница"> 4) Внутренняя страница</a></li>
+                <li> <a href="#forma"> 6) Фрагмент текущей страницы (Форма снизу) </a> </li>
+                <li> <a href="second.html?utm_source=kubsu&ewkere=123&kokakola=150" title="Вторая страница">7) Точно ссылка с параметрами </a> </li>
+		          <li> <a href="second.html?id=111" title="Вторая страница"> 8) Ссылка с id в URL </a> </li>
+		          <li> <a href="./second.html" title="Вторая страница"> 9) Относительная ссылка в текущем каталоге</a> </li>
+		          <li> <a href="./about/first.html" title="Иная страница"> 10) Ссылка на страницу в каталоге about </a> </li>
+		          <li> 
 			13) Кубанский государственный университет, сокращённо КубГУ — одно из ведущих высших учебных заведений, расположенное в <a href="https://ru.wikipedia.org/wiki/Краснодар" target="_blank">Краснодаре </a>. Является одним из крупнейших и старейших университетов юга России.
-		</li>
-		<li> <a href="https://www.kubsu.ru/index.php#region-footer-second" target="_blank"> 14) Ссылка на фрагмент контактов приёмной комиссии КУБГУ </a> </li>
-		<li>
+		      </li>
+		          <li> <a href="https://www.kubsu.ru/index.php#region-footer-second" target="_blank"> 14) Ссылка на фрагмент контактов приёмной комиссии КУБГУ </a> </li>
+		          <li>
             <a>15) Ссылки из прямоугольных и круглых областей картинки </a> <br>
             <img src="image.jpg" alt="Цветочек" width="400" usemap="#Flower">
             <map name="Flower">
@@ -37,14 +51,67 @@
 			<!-- </noindex> -->
 		</li>
 		<li> <a> 20) Нумерованный список ссылок </a>
-			<ol>
+			<ol class="sp">
 				<li> <a href="second.html" title="Сайт"> Сайт первый </a> </li>
 				<li> <a href="about/first.html" title="Вроде тоже сайт"> Сайт второй </a> </li>
 			</ol>
 		</li>
 		<li> <a href="ftp://username:password@ftp.site.ru:21/file.html" title="Какой-то файл"> 21) Ссылка на файл на сервере FTP с авторизацией </a></li>
-	<li style="margin-left: 20px">
-        Форма
+	       </ul>
+        </div>
+    <div class="vse">
+            <table id="table">
+                <thead>
+                    <tr> 
+                        <td>Колонка 1</td>
+                        <td>Колонка 2</td>
+                        <td>Колонка 3</td>
+                        <td>Колонка 4</td>
+                        <td>Колонка 5</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 1</td>
+                        <td>2 1</td>
+                        <td>3 1</td>
+                        <td>4 1</td>
+                        <td>5 1</td>
+                    </tr>
+                    <tr class="nat">
+                        <td>1 2</td>
+                        <td>2 2</td>
+                        <td rowspan="2">3 2</td>
+                        <td>4 2</td>
+                        <td>5 2</td>
+                    </tr>
+                    <tr>
+                        <td>1 3</td>
+                        <td>2 3</td>
+                        <td>3 3</td>
+                        <td>4 3</td>
+                    </tr>
+                    <tr class="nat">
+                        <td colspan="3">1 4</td>
+                        <td>2 4</td>
+                        <td>3 4</td>
+                    </tr>
+                    <tr>
+                        <td>1 5</td>
+                        <td>2 5</td>
+                        <td>3 5</td>
+                        <td colspan="2" rowspan="2">4 5</td>
+                    </tr>
+                    <tr class="nat">
+                        <td>1 6</td>
+                        <td>2 6</td>
+                        <td>3 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div class="vse">
         <form id="forma">
             <div> <input type="text" name="Name" placeholder="ФИО"> </div>
             <div> <input type="tel" name="Phone" placeholder="Телефон"> </div>
@@ -63,7 +130,7 @@
                 </div>
             <div>
                 <div> Любимый язык программирования </div>
-                <select name="ProgLang" size="6" multiple="">
+                <select name="ProgLang" size="5" multiple="">
                     <option value="Pascal"> Pascal </option>
                     <option value="C"> C </option>
                     <option value="C++"> C++ </option>
@@ -84,7 +151,11 @@
             </div>
             <div> <button type="submit"> Сохранить </button> </div>
         </form>
-    </li>
+    </div>
 	</ul>
+    </div>
+    <footer id="footer">
+        <div class="content"> © Дмитрий Капралёв</div>
+    </footer>
 </body>
 </html>
