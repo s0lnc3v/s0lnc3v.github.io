@@ -1,37 +1,60 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
 #header {
-	background-color: #abc;
-	width: 100%;
-	height: 100px;
-	padding-top: 10px;
-	padding-left: 5px;
-	padding-bottom: 25px;
-	margin: auto
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: auto
 }
 #footer {
-	background-color: #abc;
-	width: 100%;
-	height: 40px;
-	padding-top: 15px;
+    background-color: #abc;
+    width: 100%;
+    height: 15vw;
+    max-height: 100px;
+    padding-top: 30px;
 }
 #nav > div{
-	display: inline-block;
+    background-color: #abc;
+    display: flex;
     padding: 5px 15px;
+    margin-top: 8px;
     background-color: #acd;
+    width: fit-content;
+}
+#nav {
+    margin-top: 10px;
+    padding: 1vw;
+
+    background-color: #abc;
 }
 .nazv {
-	margin-top: 30px;
+
+    background-color: #abc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 120px;
+    padding-right: 50px;
 }
 .img
 {
+    background-color: #abc;
     float: left;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
 }
 .content
 {
-    max-width: 960px;
-    margin: 0 auto;
+    width: 100%;
 }
 .vse
 {
@@ -59,6 +82,9 @@
 {
     margin: 0 auto;
 }
+#tablee {
+    overflow-x: auto;
+}
 #table, #table td
 {
     border: 1px #222222 solid;
@@ -69,5 +95,59 @@
     padding: 14px;
 }
 .nat {
-	background-color: #c0c0c0;
+    background-color: #c0c0c0;
+}
+
+
+@media screen and (orientation: landscape)
+{
+    #header
+    {
+        background-color: #abc;
+    }
+    #header .content
+    {
+        display: flex;
+    }
+    #nav > div
+    {
+        display: inline-block;
+        padding: 4px 10px;
+        background-color: #acd;
+    }
+    #nav
+    {
+        order: -1;
+        flex-direction: row;
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .top2
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nazv
+    {
+        height: 100%;
+        justify-content: flex-start;
+        padding-left: 5px;
+        align-items: start;
+        padding-top: 17px;
+    }
+    .content
+    {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .mid
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .links
+    {
+        order: -1;
+    }
 }
