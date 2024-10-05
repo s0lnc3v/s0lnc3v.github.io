@@ -1,45 +1,151 @@
-.nazv {
-    color: #333;
-    font-size: 24px;
-    font-weight: bold;
+*
+{
+    box-sizing: border-box;
 }
-
-.nat {
-    background-color: #f2f2f2;
+body
+{
+    padding: 0;
+    margin: 0;
 }
-
-.sp {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#table {
+#header, #footer {
     width: 100%;
-    border-collapse: collapse;
 }
+#footer {
+    background-color: #abc;
+    height: 15vw;
+    max-height: 100px;
+    padding-top: 30px;
+}
+#nav > div{
+    background-color: #abc;
+    display: flex;
+    padding: 5px 15px;
+    margin-top: 8px;
+    background-color: #acd;
+    width: fit-content;
+}
+#nav {
+    margin-top: 10px;
+    padding: 1vw;
+    background-color: #abc;
+}
+.nazv {
 
-#table th,
-#table td {
+    background-color: #abc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 120px;
+    padding-right: 50px;
+}
+.img
+{
+    background-color: #abc;
+    float: left;
     padding: 10px;
+    width: 120px;
+    height: 120px;
+}
+.img img
+{
+    height: 100%;
+}
+.content
+{
+    width: 100%;
+}
+.vse
+{
+    padding: 8px;
+    margin: 10px 0;
+    background-color: #d9d9d9;
     text-align: center;
 }
-
-/* Mobile First */
-header {
-    background-color: #f8f9fa; /* Default background for mobile */
+.vse > div
+{
+    margin: 8px 0;
+}
+.vse > form
+{
+    background-color: white;
+    width: 550px;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+.vse > form > div
+{
+    margin: 5px 0;
+}
+#table
+{
+    margin: 0 auto;
+}
+#tablee {
+    overflow-x: auto;
+}
+#table, #table td
+{
+    border: 1px #222222 solid;
+    text-align: center;
+}
+#table td
+{
+    padding: 14px;
+}
+.nat {
+    background-color: #c0c0c0;
 }
 
-/* Медиазапрос для устройств шире 768px */
-@media (min-width: 768px) {
-    header {
-        background-color: #abc; /* Фон для более широких экранов */
-    }
 
-    #nav {
-        background-color: #acd; /* Фон для меню */
+@media screen and (orientation: landscape)
+{
+    #header
+    {
+        background-color: #abc;
     }
-
-    .nazv {
+    #header .content
+    {
+        display: flex;
+    }
+    #nav > div
+    {
+        display: inline-block;
+        padding: 4px 10px;
+        background-color: #acd;
+    }
+    #nav
+    {
+        order: -1;
+        flex-direction: row;
+        margin-top: 0;
+        padding: 0;
+    }
+    .top2
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nazv
+    {
         height: 100%;
+        justify-content: flex-start;
+        padding-left: 5px;
+        align-items: start;
+        padding-top: 17px;
+    }
+    .content
+    {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .mid
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .links
+    {
+        order: -1;
     }
 }
