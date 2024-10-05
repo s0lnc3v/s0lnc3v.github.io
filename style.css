@@ -19,14 +19,10 @@
 .vse
 {
     background-color: #d9d9d9;
-    text-align: center;
 }
 #table
 {
     margin: 0 auto;
-}
-#tablee {
-    overflow-x: auto;
 }
 #table, #table td
 {
