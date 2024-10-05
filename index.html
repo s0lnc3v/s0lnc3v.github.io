@@ -9,25 +9,30 @@
 </head>
 
 <body>
-<header class="w-100">
-    <div class="m-md-auto d-md-flex">
-        <div class="img float-start p-2">
-            <img class="h-100" src="logo.png" title="Логотип">
+<header class="container-fluid bg-light py-3">
+    <div class="row align-items-center">
+        <div class="col-md-2">
+            <img class="img-fluid" src="logo.png" title="Логотип">
         </div>
-        <div class="d-md-flex flex-md-column">
-            <div class="nazv pe-3 ps-md-4 pt-md-4 d-flex align-items-center align-items-md-start justify-content-end justify-content-md-start"> Название сайта </div>
-            <nav id="nav" class="order-md-first flex-md-row mt-2 p-md-0 mt-md-0">
-                <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Краснодар" title="Краснодар"> Ссылка меню 1 </a> </div>
+        <div class="col-md-10">
+            <div class="nazv text-start">"> Название сайта </div>
+            <nav id="nav" class="d-flex justify-content-end justify-content-md-start mt-2">
+                <!--<div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Краснодар" title="Краснодар"> Ссылка меню 1 </a> </div>
                 <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Россия" title="Россия"> Ссылка меню 2 </a> </div>
-                <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Москва" title="Москва"> Ссылка меню 3 </a> </div>
+                <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Москва" title="Москва"> Ссылка меню 3 </a> </div>-->
+
+                <a class="nav-link px-2" href="https://ru.wikipedia.org/wiki/Краснодар" title="Краснодар">Ссылка меню 1</a>
+                <a class="nav-link px-2" href="https://ru.wikipedia.org/wiki/Россия" title="Россия">Ссылка меню 2</a>
+                <a class="nav-link px-2" href="https://ru.wikipedia.org/wiki/Москва" title="Москва">Ссылка меню 3</a>
             </nav>
         </div>
     </div>
 </header>
 
-<div class="container m-md-auto w-100 d-md-flex flex-md-column">
-    <div class="vse row p-2 my-2 mx-0 text-center overflow-x-auto">
-        <table id="table" class="my-1 m-auto col-auto">
+<div class="container my-4">
+    <div class="row">
+        <div class="col-12">
+            <table id="table" class="table table-bordered text-center">
             <thead>
                 <tr>
                     <td> Колонка 1 </td>
@@ -78,9 +83,9 @@
         </table>
     </div>
 
-    <div class="row text-center order-md-first p-2 my-2 mx-0">
-        <div class="vse col-12">
-            <ul>
+    <div class="row text-center my-4">
+        <div class="col-12">
+            <ul class="list-unstyled">
             <li><div class="my-2 mx-0"> <a href="http://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 1) КУБГУ </a> </div></li>
             <li><div class="my-2 mx-0"> <a href="https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 2) КУБГУ в протоколе https </a></div></li>
             <li><div class="my-2 mx-0"> <a>3) Ссылка-изображение:  </a> <a href = "https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> <br> <img src="image.jpg" alt="Цветочек" width="400"> </a> </div></li>
@@ -121,13 +126,14 @@
         </div>
     </div>
 
-    <div class="vse row p-2 my-2 mx-0 text-center">
-        <form class="w-100 col-auto m-auto my-1 py-1 px-0">
-            <div class="my-2 mx-0"> <input type="text" name="Name" placeholder="ФИО"> </div>
-            <div class="my-2 mx-0"> <input type="tel" name="Phone" placeholder="Телефон"> </div>
-            <div class="my-2 mx-0"> <input type="email" name="Email" placeholder="Адрес электронной почты"> </div>
-            <div class="my-2 mx-0"> <input type="date" name="Date"> </div>
-            <div class="my-2 mx-0">
+     <div class="row text-center my-4">
+        <div class="col-12">
+            <form class="w-100">
+            <div class="form-group"> <input type="text" name="Name" placeholder="ФИО"> </div>
+            <div class="form-group"> <input type="tel" name="Phone" placeholder="Телефон"> </div>
+            <div class="form-group"> <input type="email" name="Email" placeholder="Адрес электронной почты"> </div>
+            <div class="form-group"> <input type="date" name="Date"> </div>
+            <div class="form-group">
                 <div> Пол </div>
                 <label>
                      <input type="radio" name="Gender">
@@ -138,7 +144,7 @@
                     Женский
                 </label>
             </div>
-            <div class="my-2 mx-0">
+            <div class="form-group">
                 <div> Любимый язык программирования </div>
                 <select name="ProgLang" size="5" multiple="">
                     <option value="Pascal"> Pascal </option>
@@ -154,22 +160,18 @@
                     <option value="Scala"> Scala </option>
                 </select>
             </div>
-            <textarea name="Bio" placeholder="Биография" cols="40" rows="10"></textarea>
-            <div>
+            <div class="form-group"><textarea name="Bio" placeholder="Биография" cols="40" rows="10"></textarea></div>
+            <div class="form-group form-check">
                 <input type="checkbox" name="Check" id="Kontrakt">
                 <label for="Kontrakt"> С контрактом ознакомлен(а) </label>
             </div>
-            <div class="my-2 mx-0"> <button type="submit"> Сохранить </button> </div>
+            <button type="submit" class="btn btn-primary"> Сохранить </button>
         </form>
     </div>
 </div>
 
-<footer class="w-100">
-    <div class="container">
-        <div class="row m-md-auto">
-            <div class="cont col"> © Дмитрий Капралёв </div>
-        </div>
-    </div>
+<footer class="container-fluid bg-light py-3 text-center">
+    <p class="mb-0">© Дмитрий Капралёв</p>
 </footer>
 </body>
 </html>
