@@ -2,163 +2,172 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <title>Main Site</title>
+    <title> Main Site </title>
 </head>
+
 <body>
-    <header class="w-100">
-        <div class="m-md-auto d-md-flex">
-            <div class="img float-start p-2"> <img src="logo.png" title="Логотип сайта" class="img"> </div>
-            <div class="d-md-flex flex-md-column">
-                <div class="syte pe-3 ps-md-4 pt-md-4 d-flex align-items-center align-items-md-start justify-content-end justify-content-md-start"> <p>Название сайта </p> </div>
-                 <nav id="nav" class="order-md-first flex-md-row mt-2 p-md-0 mt-md-0">
-                     <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Краснодар" title="Краснодар"> Ссылка меню 1 </a> </div>
-                     <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Россия" title="Россия"> Ссылка меню 2</a> </div>
-                     <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Москва" title="Москва"> Ссылка меню 3</a> </div>
-                </nav>
-            </div>
-        </div>      
-    </header>
-    <div class="container m-md-auto w-100 d-md-flex flex-md-column">
-        <div class="blok row p-2 my-2 mx-0 text-center overflow-x-auto">
-            <table id="table" class="my-1 m-auto col-auto">
-                <thead>
-                    <tr> 
-                        <td>Колонка 1</td>
-                        <td>Колонка 2</td>
-                        <td>Колонка 3</td>
-                        <td>Колонка 4</td>
-                        <td>Колонка 5</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1 1</td>
-                        <td>2 1</td>
-                        <td>3 1</td>
-                        <td>4 1</td>
-                        <td>5 1</td>
-                    </tr>
-                    <tr class="nat">
-                        <td>1 2</td>
-                        <td>2 2</td>
-                        <td rowspan="2">3 2</td>
-                        <td>4 2</td>
-                        <td>5 2</td>
-                    </tr>
-                    <tr>
-                        <td>1 3</td>
-                        <td>2 3</td>
-                        <td>3 3</td>
-                        <td>4 3</td>
-                    </tr>
-                    <tr class="nat">
+<header class="w-100">
+    <div class="m-md-auto d-md-flex">
+        <div class="img float-start p-2">
+            <img class="h-100" src="logo.png" title="Логотип">
+        </div>
+        <div class="d-md-flex flex-md-column">
+            <div class="syte pe-3 ps-md-4 pt-md-4 d-flex align-items-center align-items-md-start justify-content-end justify-content-md-start"> Название сайта </div>
+            <nav id="nav" class="order-md-first flex-md-row mt-2 p-md-0 mt-md-0">
+                <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Краснодар" title="Краснодар"> Ссылка меню 1 </a> </div>
+                <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Россия" title="Россия"> Ссылка меню 2 </a> </div>
+                <div class="d-md-inline-block p-1 my-2 ms-2 py-md-1 px-md-2"> <a href="https://ru.wikipedia.org/wiki/Москва" title="Москва"> Ссылка меню 3 </a> </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container m-md-auto w-100 d-md-flex flex-md-column">
+    <div class="blok row p-2 my-2 mx-0 text-center overflow-x-auto">
+        <table id="table" class="my-1 m-auto col-auto">
+            <thead>
+                <tr>
+                    <td> Колонка 1 </td>
+                    <td> Колонка 2 </td>
+                    <td> Колонка 3 </td>
+                    <td> Колонка 4 </td>
+                    <td> Колонка 5 </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 1 </td>
+                    <td> 2 1 </td>
+                    <td> 3 1 </td>
+                    <td> 4 1 </td>
+                    <td> 5 1 </td>
+                </tr>
+                <tr class="nat">
+                    <td> 1 2 </td>
+                    <td> 2 2 </td>
+                    <td rowspan="2">3 2</td>
+                    <td> 4 2 </td>
+                    <td> 5 2 </td>
+                </tr>
+                <tr>
+                    <td> 1 3 </td>
+                    <td> 2 3 </td>
+                    <td> 3 3 </td>
+                    <td> 4 3 </td>
+                </tr>
+                <tr class="nat">
                         <td colspan="3">1 4</td>
                         <td>2 4</td>
                         <td>3 4</td>
-                    </tr>
-                    <tr>
+                </tr>
+                <tr>
                         <td>1 5</td>
                         <td>2 5</td>
                         <td>3 5</td>
                         <td colspan="2" rowspan="2">4 5</td>
-                    </tr>
-                    <tr class="nat">
+                </tr>
+                <tr class="nat">
                         <td>1 6</td>
                         <td>2 6</td>
                         <td>3 6</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-         <div class="row text-center order-md-first p-2 my-2 mx-0">
-            <ul>
-                <li> <a href="http://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 1) КУБГУ </a> </li>
-                <li> <a href="https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 2) КУБГУ в протоколе https </a></li>
-                <li> <a>3) Ссылка-изображение:  </a> <a href = "https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> <br> <img src="image.jpg" alt="Цветочек" width="400"> </a> </li>
-                <li> <a href="/second.html" title="Вторая страница"> 4) Внутренняя страница</a></li>
-                <li> <a href="#forma"> 6) Фрагмент текущей страницы (Форма снизу) </a> </li>
-                <li> <a href="second.html?utm_source=kubsu&ewkere=123&kokakola=150" title="Вторая страница">7) Точно ссылка с параметрами </a> </li>
-                  <li> <a href="second.html?id=111" title="Вторая страница"> 8) Ссылка с id в URL </a> </li>
-                  <li> <a href="./second.html" title="Вторая страница"> 9) Относительная ссылка в текущем каталоге</a> </li>
-                  <li> <a href="./about/first.html" title="Иная страница"> 10) Ссылка на страницу в каталоге about </a> </li>
-                  <li> 
+    <div class="row text-center order-md-first p-2 my-2 mx-0">
+        <div class="blok col-12">
+            <div class="my-2 mx-0"> <a href="http://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 1) КУБГУ </a> </div>
+            <div class="my-2 mx-0"> <a href="https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> 2) КУБГУ в протоколе https </a></div>
+            <div class="my-2 mx-0"> <a>3) Ссылка-изображение:  </a> <a href = "https://kubsu.ru" target="_blank" title="Кубанский Государственный Университет"> <br> <img src="image.jpg" alt="Цветочек" width="400"> </a> </div>
+            <div class="my-2 mx-0"> <a href="/second.html" title="Вторая страница"> 4) Внутренняя страница</a></div>
+            <div class="my-2 mx-0"> <a href="#forma"> 6) Фрагмент текущей страницы (Форма снизу) </a> </div>
+            <div class="my-2 mx-0"> <a href="second.html?utm_source=kubsu&ewkere=123&kokakola=150" title="Вторая страница">7) Точно ссылка с параметрами </a> </div>
+            <div class="my-2 mx-0"> <a href="second.html?id=111" title="Вторая страница"> 8) Ссылка с id в URL </a> </div>
+            <div class="my-2 mx-0"> <a href="./second.html" title="Вторая страница"> 9) Относительная ссылка в текущем каталоге</a> </div>
+            <div class="my-2 mx-0"> <a href="./about/first.html" title="Иная страница"> 10) Ссылка на страницу в каталоге about </a> </div>
+            <div class="my-2 mx-0"> 
             13) Кубанский государственный университет, сокращённо КубГУ — одно из ведущих высших учебных заведений, расположенное в <a href="https://ru.wikipedia.org/wiki/Краснодар" target="_blank">Краснодаре </a>. Является одним из крупнейших и старейших университетов юга России.
-              </li>
-                  <li> <a href="https://www.kubsu.ru/index.php#region-footer-second" target="_blank"> 14) Ссылка на фрагмент контактов приёмной комиссии КУБГУ </a> </li>
-                  <li>
+            </div>
+            <div class="my-2 mx-0"> <a href="https://www.kubsu.ru/index.php#region-footer-second" target="_blank"> 14) Ссылка на фрагмент контактов приёмной комиссии КУБГУ </a> </div>
+            <div class="my-2 mx-0">
             <a>15) Ссылки из прямоугольных и круглых областей картинки </a> <br>
             <img src="image.jpg" alt="Цветочек" width="400" usemap="#Flower">
             <map name="Flower">
                 <area shape="circle" coords="210,150,120" alt="адин" href="about/first.html" title="Круглая область">
                 <area shape="rect" coords="0,0,400,300" alt="два" href="about/second/second.html" title="Прямоугольная область">
             </map>
-        </li>
-        <li> <a href=""> 16) Пустой href </a> </li>
-        <li> <a title="Точно не ссылка"> 17) Ссылка без href </a> </li>
-        <li> <a href="second.html" title="Вторая страница" rel="nofollow"> 18) Ссылка, по которой запрещён переход поисковикам </a> </li>
-        <li> 
+            </div>
+            <div class="my-2 mx-0"> <a href=""> 16) Пустой href </a> </div>
+            <div class="my-2 mx-0"> <a title="Точно не ссылка"> 17) Ссылка без href </a> </div>
+            <div class="my-2 mx-0"> <a href="second.html" title="Вторая страница" rel="nofollow"> 18) Ссылка, по которой запрещён переход поисковикам </a> </div>
+            <div class="my-2 mx-0"> 
             <!-- <noindex> -->
             <a href="second.html" rel="nofollow"> 19) Ссылка, запрещённая для индексации поисковиками </a> 
             <!-- </noindex> -->
-        </li>
-        <li> <a> 20) Нумерованный список ссылок </a>
+            </div>
+            <div class="my-2 mx-0"> <a> 20) Нумерованный список ссылок </a>
             <ol class="sp">
-                <li> <a href="second.html" title="Сайт"> Сайт первый </a> </li>
-                <li> <a href="about/first.html" title="Вроде тоже сайт"> Сайт второй </a> </li>
+                <div class="my-2 mx-0"> <a href="second.html" title="Сайт"> Сайт первый </a> </div>
+                <div class="my-2 mx-0"> <a href="about/first.html" title="Вроде тоже сайт"> Сайт второй </a> </div>
             </ol>
-        </li>
-        <li> <a href="ftp://username:password@ftp.site.ru:21/file.html" title="Какой-то файл"> 21) Ссылка на файл на сервере FTP с авторизацией </a></li>
-           </ul>
-        </div>
-
-        <div class="blok row p-2 my-2 mx-0 text-center">
-            <form class="w-100 col-auto m-auto my-1 py-1 px-0">
-                <div class="my-2 mx-0"> <input type="text" name="Name" placeholder="ФИО"> </div>
-                <div class="my-2 mx-0"> <input type="tel" name="Phone" placeholder="Телефон"> </div>
-                <div class="my-2 mx-0"> <input type="email" name="Email" placeholder="Адрес электронной почты"> </div>
-                <div class="my-2 mx-0"> <input type="date" name="Date"> </div>
-                <div class="my-2 mx-0">
-                    <div> Пол </div>
-                    <label>
-                        <input type="radio" name="Gender">
-                        Мужской
-                    </label>
-                    <label>
-                        <input type="radio" name="Gender">
-                        Женский
-                    </label>
-                    </div>
-                <div>
-                    <div class="my-2 mx-0"> Любимый язык программирования </div>
-                    <select name="ProgLang" size="5" multiple="">
-                        <option value="Pascal"> Pascal </option>
-                        <option value="C"> C </option>
-                        <option value="C++"> C++ </option>
-                        <option value="JavaScript"> JavaScript </option>
-                        <option value="PHP"> PHP </option>
-                        <option value="Python"> Python </option>
-                        <option value="Java"> Java </option>
-                        <option value="Haskel"> Haskel </option>
-                        <option value="Clojure"> Clojure </option>
-                        <option value="Prolog"> Prolog </option>
-                        <option value="Scala"> Scala </option>
-                    </select>
-                </div>
-                <textarea name="Bio" placeholder="Биография" cols="40" rows="10"></textarea>
-                <div class="my-2 mx-0">
-                    <input type="checkbox" name="Check" id="Kontrakt">
-                    <label for="Kontrakt"> С контрактом ознакомлен(а) </label>
-                </div>
-                <div class="my-2 mx-0"> <button type="submit"> Сохранить </button> </div>
-            </form>
+            </div>
+            <div class="my-2 mx-0"> <a href="ftp://username:password@ftp.site.ru:21/file.html" title="Какой-то файл"> 21) Ссылка на файл на сервере FTP с авторизацией </a></div>
         </div>
     </div>
-    <footer class="w-100">
-        <div class="container row m-md-auto"> © Дмитрий Капралёв</div>
-    </footer>
+
+    <div class="blok row p-2 my-2 mx-0 text-center">
+        <form class="w-100 col-auto m-auto my-1 py-1 px-0">
+            <div class="my-2 mx-0"> <input type="text" name="Name" placeholder="ФИО"> </div>
+            <div class="my-2 mx-0"> <input type="tel" name="Phone" placeholder="Телефон"> </div>
+            <div class="my-2 mx-0"> <input type="email" name="Email" placeholder="Адрес электронной почты"> </div>
+            <div class="my-2 mx-0"> <input type="date" name="Date"> </div>
+            <div class="my-2 mx-0">
+                <div> Пол </div>
+                <label>
+                     <input type="radio" name="Gender">
+                      Мужской
+                </label>
+                <label>
+                    <input type="radio" name="Gender">
+                    Женский
+                </label>
+            </div>
+            <div class="my-2 mx-0">
+                <div> Любимый язык программирования </div>
+                <select name="ProgLang" size="5" multiple="">
+                    <option value="Pascal"> Pascal </option>
+                    <option value="C"> C </option>
+                    <option value="C++"> C++ </option>
+                    <option value="JavaScript"> JavaScript </option>
+                    <option value="PHP"> PHP </option>
+                    <option value="Python"> Python </option>
+                    <option value="Java"> Java </option>
+                    <option value="Haskel"> Haskel </option>
+                    <option value="Clojure"> Clojure </option>
+                    <option value="Prolog"> Prolog </option>
+                    <option value="Scala"> Scala </option>
+                </select>
+            </div>
+            <textarea name="Bio" placeholder="Биография" cols="40" rows="10"></textarea>
+            <div>
+                <input type="checkbox" name="Check" id="Kontrakt">
+                <label for="Kontrakt"> С контрактом ознакомлен(а) </label>
+            </div>
+            <div class="my-2 mx-0"> <button type="submit"> Сохранить </button> </div>
+        </form>
+    </div>
+</div>
+
+<footer class="w-100">
+    <div class="container">
+        <div class="row m-md-auto">
+            <div class="foot col"> © Дмитрий Капралёв </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
