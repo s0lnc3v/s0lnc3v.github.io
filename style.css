@@ -14,35 +14,21 @@ body
     background-color: #abc;
     height: 15vw;
     max-height: 100px;
-    padding-top: 30px;
 }
 #nav > div{
-    background-color: #abc;
-    display: flex;
-    padding: 5px 15px;
-    margin-top: 8px;
     background-color: #acd;
-    width: fit-content;
 }
 #nav {
-    margin-top: 10px;
     padding: 1vw;
     background-color: #abc;
 }
 .nazv {
-
     background-color: #abc;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     height: 120px;
-    padding-right: 50px;
 }
 .img
 {
     background-color: #abc;
-    float: left;
-    padding: 10px;
     width: 120px;
     height: 120px;
 }
@@ -56,33 +42,14 @@ body
 }
 .vse
 {
-    padding: 8px;
-    margin: 10px 0;
     background-color: #d9d9d9;
-    text-align: center;
-}
-.vse > div
-{
-    margin: 8px 0;
 }
 .vse > form
 {
     background-color: white;
     width: 550px;
-    margin: 10px auto;
-    padding: 10px 0;
 }
-.vse > form > div
-{
-    margin: 5px 0;
-}
-#table
-{
-    margin: 0 auto;
-}
-#tablee {
-    overflow-x: auto;
-}
+
 #table, #table td
 {
     border: 1px #222222 solid;
@@ -103,49 +70,12 @@ body
     {
         background-color: #abc;
     }
-    #header .content
-    {
-        display: flex;
-    }
     #nav > div
     {
-        display: inline-block;
-        padding: 4px 10px;
         background-color: #acd;
-    }
-    #nav
-    {
-        order: -1;
-        flex-direction: row;
-        margin-top: 0;
-        padding: 0;
-    }
-    .top2
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
     }
     .nazv
     {
         height: 100%;
-        justify-content: flex-start;
-        padding-left: 5px;
-        align-items: start;
-        padding-top: 17px;
-    }
-    .content
-    {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    .mid
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .links
-    {
-        order: -1;
     }
 }
