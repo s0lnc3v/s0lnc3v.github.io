@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <title>Main Site</title>
 </head>
 <body>
@@ -109,17 +109,19 @@
                     <!-- </noindex> -->
                 </div>
                 <div class="mx-0 my-1"> <a> 20) Нумерованный список ссылок </a>
+                    
                     <ol class="sp">
-                        <div class="mx-0 my-1"> <a href="second.html" title="Сайт"> Сайт первый </a> </div>
-                        <div class="mx-0 my-1"> <a href="about/first.html" title="Вроде тоже сайт"> Сайт второй </a> </div>
+                        <li><a href="second.html" title="Сайт"> Сайт первый </a></li>
+                        <li><a href="about/first.html" title="Вроде тоже сайт"> Сайт второй </a></li>
                     </ol>
+
                 </div>
                 <div class="mx-0 my-1"> <a href="ftp://username:password@ftp.site.ru:21/file.html" title="Какой-то файл"> 21) Ссылка на файл на сервере FTP с авторизацией </a></div>
            
         </div>
 
         <div class="vse row p-2 my-2 mx-0 text-center align-items-center justify-content-center">
-            <form id="w-100 col-auto m-auto my-1 py-1 px-0">
+            <form class="col-auto m-auto my-1 py-1 px-0">
                 <div class="mx-0 p-1"> <input type="text" name="Name" placeholder="ФИО"> </div>
                 <div class="mx-0 p-1"> <input type="tel" name="Phone" placeholder="Телефон"> </div>
                 <div class="mx-0 p-1"> <input type="email" name="Email" placeholder="Адрес электронной почты"> </div>
