@@ -9,8 +9,8 @@ const pocket = document.getElementById("pocket");
 const result = document.getElementById("totalPrice");
 
 const prices = {
-    hoodie: 4700,
     coat: 15000,
+    hoodie: 4700,
     sneakers: {
         basic: 3999,
         premium: 6799
@@ -18,7 +18,9 @@ const prices = {
 };
 
 function delaem() {
-    const selectedProductType = document.querySelector("input[name='productType']:checked").value;
+    const selectedProductType = document.querySelector(
+        "input[name='productType']:checked"
+    ).value;
     if (selectedProductType === "hoodie") {
         optionsDiv.classList.add("hidden");
         propertiesDiv.classList.add("hidden");
@@ -32,7 +34,9 @@ function delaem() {
 }
 
 function calculator() {
-    const selectedProductType = document.querySelector("input[name='productType']:checked").value;
+    const selectedProductType = document.querySelector(
+        "input[name='productType']:checked"
+    ).value;
     const kolvo = kolvo1.value.trim();
 
     if (Number.isNaN(Number(kolvo)) || kolvo <= 0) {
@@ -63,14 +67,14 @@ function calculator() {
     result.textContent = totalPrice;
 }
 
-productTypeInputs.forEach((input) => {
-    input.addEventListener("change", () => {
+productTypeInputs.forEach(function (input) {
+    input.addEventListener("change", function () {
         delaem();
         calculator();
     });
 });
 
-kolvo.addEventListener("input", calculator);
+kolvo1.addEventListener("input", calculator);
 optionsSelect.addEventListener("change", calculator);
 waterproof.addEventListener("change", calculator);
 teploe.addEventListener("change", calculator);
