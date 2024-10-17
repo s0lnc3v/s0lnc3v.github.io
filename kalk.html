@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости услуги</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Калькулятор стоимости услуги</h2>
+
+        <form>
+            <label for="kolvo">Количество товаров:</label>
+            <input type="text" id="kolvo" name="kolvo" placeholder="Введите количество"><br><br>
+
+            <p>Выберите тип товара:</p>
+            <input type="radio" id="hoodie" name="productType" value="hoodie">
+            <label for="hoodie">Толстовка - 4700₽</label><br>
+
+            <input type="radio" id="sneakers" name="productType" value="sneakers">
+            <label for="sneakers">Кроссовки</label><br>
+
+            <input type="radio" id="coat" name="productType" value="coat">
+            <label for="coat">Пальто - 15000₽</label><br><br>
+
+            <div id="optionsDiv" class="hidden">
+                <select id="options" name="options">
+                    <option value="basic">Обычные кроссовки - 3999₽</option>
+                    <option value="premium">Кроссовки премиум качества - 6799₽</option>
+                </select><br><br>
+            </div>
+
+            <div id="propertiesDiv" class="hidden">
+                <input type="checkbox" id="waterproof" name="waterproof">
+                <label for="waterproof">Водонепроницаемое — +1000₽</label><br>
+                
+                <input type="checkbox" id="teploe" name="teploe">
+                <label for="teploe">Утепленное — +3500₽</label><br>
+
+                <input type="checkbox" id="pocket" name="pocket">
+                <label for="pocket">С доп. карманом — +650₽</label><br><br>
+            </div>
+
+            <p>Итоговая цена: </br><span id="totalPrice">0</span></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
