@@ -1,0 +1,20 @@
+body {
+    background-color: #ccc;
+}
+
+.gallery {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+.gallery .slick-slide {
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
