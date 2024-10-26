@@ -22,7 +22,7 @@
 
     <script src="jquery-3.7.1.min.js"> </script>
     <script src="slick/slick.min.js"> </script>
-    <script src="script.js"> </script>
+    <script src="gallery.js"> </script>
 </body>
 
 
