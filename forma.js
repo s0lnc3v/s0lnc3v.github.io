@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.style.overflow = "hidden";
         history.pushState({ form: "open" }, "", "?form=open");
     };
+
     const closePopupHandler = function() {
         popup.style.display = "none";
         document.body.style.overflow = "";
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     open.addEventListener("click", openPopup);
     closePopup.addEventListener("click", closePopupHandler);
     popupOverlay.addEventListener("click", closePopupHandler);
+
     window.addEventListener("popstate", function(event) {
         if (!event.state || !event.state.form) {
             closePopupHandler();
@@ -37,12 +39,17 @@ document.addEventListener("DOMContentLoaded", function() {
         otvet.textContent = "";
         const formData = new FormData(forma);
         fetch(url, {
-            method: "POST",
-            body: formData
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            },
+            method: "POST"
         })
-        .then((response) => response.json())
-        .then(function(data) {
-            if (data.success) {
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            if (data.status === "success") {
                 otvet.textContent = "Спасибо за ваше сообщение!";
                 otvet.style.color = "green";
                 forma.reset();
@@ -51,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 otvet.style.color = "red";
             }
         })
-        .catch(function(error){
+        .catch(function () {
             otvet.textContent = "Ошибка отправки. Попробуйте позже.";
             otvet.style.color = "red";
         });
