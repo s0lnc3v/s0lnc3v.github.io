@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма конкретная такая</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+<body>
+    <div class="button-container">
+        <button id="open">Открыть форму</button>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-content">
+            <button id="closePopup" class="close">&times;</button>
+            <h2>Обратная связь</h2>
+            <form id="forma">
+                <div><input type="text" name="name" placeholder="ФИО" required></div>
+                <div><input type="email" name="email" placeholder="Email" required></div>
+                <div><input type="tel" name="phone" placeholder="Телефон" required></div>
+                <div><input type="text" name="org" placeholder="Организация"></div>
+                <div><textarea name="message" placeholder="Сообщение" required></textarea></div>
+                <div> <label class="checkbox-label">
+                    <input type="checkbox" name="consent" required> Cогласен с политикой обработки персональных данных
+                </label> </div>
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="otvet" class="otvet"></div>
+        </div>
+    </div>
+
+    <script src="forma.js"></script>
+</body>
+</html>
