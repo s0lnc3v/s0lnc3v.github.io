@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.style.overflow = "hidden";
         history.pushState({ form: "open" }, "", "?form=open");
     };
-
     const closePopupHandler = function() {
         popup.style.display = "none";
         document.body.style.overflow = "";
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
     open.addEventListener("click", openPopup);
     closePopup.addEventListener("click", closePopupHandler);
     popupOverlay.addEventListener("click", closePopupHandler);
-
     window.addEventListener("popstate", function(event) {
         if (!event.state || !event.state.form) {
             closePopupHandler();
@@ -39,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
         otvet.textContent = "";
         const formData = new FormData(forma);
         fetch(url, {
-            body: formData,
-            method: "POST"
+            method: "POST",
+            body: formData
         })
         .then((response) => response.json())
         .then(function(data) {
