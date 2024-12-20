@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drupal Support</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="slick/slick.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300, 400, 500,600" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="plus/drupal-coder.svg" alt="Логотип Drupal Support">
+            </div>
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">ПОДДЕРЖКА DRUPAL</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">АДМИНИСТРИРОВАНИЕ<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">МИГРАЦИЯ</a></li>
+                            <li><a href="#">БЭКАПЫ</a></li>
+                            <li><a href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                            <li><a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+                            <li><a href="#">ПЕРЕЕЗД НА HTTPS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ПРОДВИЖЕНИЕ</a></li>
+                    <li><a href="#">РЕКЛАМА</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">О НАС<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#kommand">КОМАНДА</a></li>
+                            <li><a href="#">DRUPALGIVE</a></li>
+                            <li><a href="#">БЛОГ</a></li>
+                            <li><a href="#">КУРСЫ DRUPAL</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#cases">ПРОЕКТЫ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="menu-btn">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- Главный блок с видео -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="plus/video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="hero-heading">
+                    <h1>Поддержка<br>сайтов на Drupal</h1>
+                    
+                    <p>Сопровождение и поддержка сайтов <br> на CMS Drupal любых версий и запущенности</p>
+                    <a href="#tarifs"><button class="btn"> ТАРИФЫ</button></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h1>#1</h1>
+                        <img src="plus/cup.png" alt="#1" class="stat-icon">
+                        <p>Drupal-разработчики в России по версии Рейтинга Рунета</p>
+                    </div>
+                    <div class="stat-item">
+                        <h1>3+</h1>
+                        <p>средний опыт специалистов более 3 лет</p>
+                    </div>
+                    <div class="stat-item">
+                        <h1>14</h1>
+                        <p>лет опыта в сфере Drupal</p>
+                    </div>
+                    <div class="stat-item">
+                        <h1>50+</h1>
+                        <p>модулей и тем в формате DrupalGive</p>
+                    </div>
+                    <div class="stat-item">
+                        <h1>90,000+</h1>
+                        <p>часов поддержки сайтов на Drupal</p>
+                    </div>
+                    <div class="stat-item">
+                        <h1>300+</h1>
+                        <p>проектов на поддержке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="drupal-expertise">
+        <div class="container">
+            <div class="expertise-header">
+                <h1>13 лет совершенствуем <br> компетенции в Друпал <br> поддержке!</h1>
+                <h2>Разрабатываем и оптимизируем модули, расширяем <br> функциональность сайтов, обновляем дизайн</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="expertise-items">
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-1.svg" alt="Иконка добавления информации" class="photo">
+                    <h3>Добавление информации на сайт, создание новых разделов</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-2.svg" alt="Иконка разработки" class="photo">
+                    <h3>Разработка и оптимизация модулей сайта</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-3.svg" alt="Иконка интеграции" class="photo">
+                    <h3>Интеграция с CRM, 1С, платежными системами, любыми веб-сервисами</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-4.svg" alt="Иконка доработки" class="photo">
+                    <h3>Любые доработки функционала и дизайна</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-5.svg" alt="Иконка аудита" class="photo">
+                    <h3>Аудит и мониторинг безопасности Drupal сайтов</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-6.svg" alt="Иконка миграции" class="photo">
+                    <h3>Миграция, импорт контента и апгрейд Drupal</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-7.svg" alt="Иконка оптимизации" class="photo">
+                    <h3>Оптимизация и ускорение Drupal-сайтов</h3>
+                </div>
+                <div class="expertise-item">
+                    <img src="plus/skrit.png" class="skrit">
+                    <img src="plus/competency-8.svg" alt="Иконка маркетинга" class="photo">
+                    <h3>Веб-маркетинг, консультации и работы по SEO</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="support-section">
+        <h2>Поддержка <br> от Drupal-coder</h2>
+        <div class="support-blocks">
+            <div class="support-block">
+                <span class="number">01.</span>
+                <h3>Постановка задачи по Email</h3>
+                <p>Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.</p>
+                <div class="icon"><img src="plus/support1.svg" alt="Email"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">02.</span>
+                <h3>Система Helpdesk – отчетность, прозрачность</h3>
+                <p>Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</p>
+                <div class="icon"><img src="plus/support2.svg" alt="Helpdesk"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">03.</span>
+                <h3>Расширенная техническая поддержка</h3>
+                <p>Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.</p>
+                <div class="icon"><img src="plus/support3.svg" alt="Техническая поддержка"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">04.</span>
+                <h3>Персональный менеджер проекта</h3>
+                <p>Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
+                <div class="icon"><img src="plus/support4.svg" alt="Менеджер проекта"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">05.</span>
+                <h3>Удобные способы оплаты</h3>
+                <p>Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.</p>
+                <div class="icon"><img src="plus/support5.svg" alt="Оплата"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">06.</span>
+                <h3>Работаем с SLA и NDA</h3>
+                <p>Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</p>
+                <div class="icon"><img src="plus/support6.svg" alt="SLA и NDA"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">07.</span>
+                <h3>Штатные специалисты</h3>
+                <p>В нашем штате штатные специалисты, никаких фрилансеров.</p>
+                <div class="icon"><img src="plus/support7.svg" alt="Штатные специалисты"></div>
+            </div>
+            <div class="support-block">
+                <span class="number">08.</span>
+                <h3>Удобные каналы связи</h3>
+                <p>Консультации по телефону, скайпу, и в мессенджерах.</p>
+                <div class="icon"><img src="plus/support8.svg" alt="Каналы связи"></div>
+            </div>
+      </div>
+    </section>
+    <section class="expertise-section">
+        <div class="expertise-content">
+            <div class="expertise-image">
+              <img src="plus/laptop.png" alt="Экспертиза Drupal">
+            </div>
+            <div class="expertise-blocks">
+                <h3>Эспретиза в Drupal, опыт 14 лет!</h3>
+                <div class="expertise-row">
+                    <div class="expertise-item2">
+                        <p>Только системный подход – контроль версий, резервирование и тестирование!</p>
+                    </div>
+                    <div class="expertise-item2">
+                        <p>Только Drupal сайты, не берем на поддержку сайты на других CMS!</p>
+                    </div>
+                </div>
+                <div class="expertise-row">
+                    <div class="expertise-item2">
+                        <p>Участвуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем <a href="#">свои модули Drupal</a></p>
+                    </div>
+                    <div class="expertise-item2">
+                        <p>Поддерживаем сайты на Drupal 5, 6, 7 и 8.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tariff-section" id="tarifs">
+        <h2 class="tariff-title">Тарифы</h2>
+        <div class="tariff-container">
+            <div class="tariff-card">
+                <h3>Стартовый</h3>
+                <div class="tariff-divider"></div>
+                <ul class="tariff-item">
+                    <li><span class="checkmark"></span>Консультации и работы по SEO</li>
+                    <li><span class="checkmark"></span>Услуги дизайнера</li>
+                    <li><span class="checkmark"></span>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
+                    <li><span class="checkmark"></span>Предоплата от 6 000 рублей в месяц</li>
+                </ul>
+                <a href="#" class="button">Свяжитесь с нами!</a>
+            </div>
+            <div class="tariff-card">
+                <h3>Бизнес</h3>
+                <div class="tariff-divider"></div>
+                <ul class="tariff-item">
+                    <li><span class="checkmark"></span>Консультации и работы по SEO</li>
+                    <li><span class="checkmark"></span>Услуги дизайнера</li>
+                    <li><span class="checkmark"></span>Высокое время реакции — до 2 рабочих дней</li>
+                    <li><span class="checkmark"></span>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
+                    <li><span class="checkmark"></span>Предоплата от 30 000 рублей в месяц</li>
+                </ul>
+                <a href="#" class="button">Свяжитесь с нами!</a>
+            </div>
+            <div class="tariff-card">
+                <h3>VIP</h3>
+                <div class="tariff-divider"></div>
+                <ul class="tariff-item">
+                    <li><span class="checkmark"></span>Консультации и работы по SEO</li>
+                    <li><span class="checkmark"></span>Услуги дизайнера</li>
+                    <li><span class="checkmark"></span>Максимальное время реакции — в день обращения</li>
+                    <li><span class="checkmark"></span>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
+                    <li><span class="checkmark"></span>Предоплата от 270 000 рублей в месяц</li>
+                </ul>
+                <a href="#" class="button">Свяжитесь с нами!</a>
+            </div>
+        </div>
+        <div class="tariff-footer">
+            <p>Вам не подходят наши тарифы? Оставьте заявку, и мы <br> предложим вам индивидуальные условия!</p>
+            <a href="#" class="custom-tariff-link">ПОЛУЧИТЬ ИНДИВИДУАЛЬНЫЙ ТАРИФ</a>
+        </div>
+    </section>
+
+  
+    <section class="developers-section">
+        <h2 class="developers-title">Наши профессиональные разработчики<br>выполняют быстро любые задачи</h2>
+        <div class="developers-container">
+            <div class="developer-task">
+                <img src="plus/competency-20.svg" alt="Иконка настройки GA">
+                <p class="task-time">от 1ч</p>
+                <p class="task-text">Настройка события GA<br>в интернет-магазине</p>
+            </div>
+            <div class="developer-task">
+                <img src="plus/competency-21.svg" alt="Иконка разработки мобильной версии">
+                <p class="task-time">от 20ч</p>
+                <p class="task-text">Разработка мобильной<br>версии сайта</p>
+            </div>
+            <div class="developer-task">
+                <img src="plus/competency-22.svg" alt="Иконка интеграции модуля оплаты">
+                <p class="task-time">от 8ч</p>
+                <p class="task-text">Интеграция модуля<br>оплаты</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="team-section" id="kommand">
+        <h2 class="team-title">Команда</h2>
+        <div class="team-container">
+            <div class="team-row">
+                <div class="team-card">
+                    <img src="plus/IMG_2472_0.jpg" alt="Сергей Синица">
+                    <h3>Сергей Синица</h3>
+                    <p>Руководитель отдела веб-разработок, канд. техн. наук, заместитель директора</p>
+                </div>
+                <div class="team-card">
+                    <img src="plus/IMG_2539_0.jpg" alt="Роман Агабеков">
+                    <h3>Роман Агабеков</h3>
+                    <p>Руководитель отдела DevOPS, директор</p>
+                </div>
+                <div class="team-card">
+                    <img src="plus/IMG_2474_1.jpg" alt="Алексей Синица">
+                    <h3>Алексей Синица</h3>
+                    <p>Руководитель отдела поддержки сайтов</p>
+                </div>
+            </div>
+            <div class="team-row team-row-second">
+                <div class="team-card">
+                    <img src="plus/IMG_2522_0.jpg" alt="Дарья Бочкарёва">
+                    <h3>Дарья Бочкарёва</h3>
+                    <p>Руководитель отдела продаж, контекстной рекламы и контент-поддержки сайтов</p>
+                </div>
+                <div class="team-card">
+                    <img src="plus/IMG_9971_16.jpg" alt="Ирина Торунова">
+                    <h3>Ирина Торгунова</h3>
+                    <p>Менеджер по работе с клиентами</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="team-button">ВСЯ КОМАНДА</a>
+    </section>
+
+
+   <section class="cases-section" id="cases">
+        <h2 class="cases-title">Последние кейсы</h2>
+        <div class="cases-grid">
+            <div class="row">
+                <div class="case-item case-with-text-below">
+                    <div class="case-img"><img src="plus/noyt.jpg" alt="Кейс 1"></div>
+                    <div class="case-text-below">
+                        <h3><a href="#">Настройка кэширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!</a></h3>
+                        <h2>04.05.2020</h2>
+                        <p>Влияние скорости загрузки страницы сайта на отказы и конверсии. Кейс ускорения...</p>
+                    </div>
+                </div>
+                <div class="case-item case-img2">
+                    <img src="plus/noyt1.jpg" alt="Кейс 2">
+                    <div class="case-text">
+                        <h3><a href="#">Использование отчетов<br>Ecommerce в Яндекс.Метрике</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="case-item case-with-another">
+                    <img src="plus/444.png" alt="Кейс 3">
+                    <div class="case-text">
+                        <h3><a href="#">Повышение конверсий страницы с формой заявки с применением AB-тестирования</a></h3>
+                        <p>24.01.2020</p>
+                    </div>
+                </div>
+                <div class="case-item case-with-another">
+                    <img src="plus/speed.jpg" alt="Кейс 4">
+                    <div class="case-text">
+                        <h3><a href="#">Drupal 7: Ускорение времени генерации страницы интернет-магазина на 32%</a></h3>
+                        <p>23.09.2019</p>
+                    </div>
+                </div>
+                <div class="case-item case-with-text-below">
+                    <div class="case-img"><img src="plus/ekran.png" alt="Кейс 5"></div>
+                    <div class="case-text-below">
+                        <h3>Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1С: Предприятие, МойСклад, Класс365</h3>
+                        <h2>22.08.2019</h2>
+                        <p>Опубликован <a href="#" class="link">релиз модуля...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>       
+        <div class="reviews__container">
+            <div class="reviews__content">                
+                <div class="reviews__item active">
+                    <img src="plus/logo_0.png" alt="Logo" class="reviews__logo">
+                    <div class="reviews__text">
+                        <p> Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть, привели меня на сайт и, в итоге, к ребятам из Drupal-coder. И вот уже практически полгода как не проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! Починили все, что не работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж мелких починок и доработок - не счесть! И главное - все качественно и быстро (не взирая на не самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит и предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман починят, поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. Надеюсь, что наше сотрудничество затянется надолго! Спасибо!!! </p>
+                        <h3>С уважением, Наталья Сушкова, руководитель Отдела Веб-проектов Группы компаний "Си Эль парфюм" htts://cielparfum.com</h3>
+                    </div>
+                </div>
+                <img src="plus/chert.png" alt="Vertical Line" class="reviews__line">
+                <div class="reviews__controls">
+                    <button class="reviews__arrow reviews__arrow--left">
+                        <img src="plus/leftarrow.jpg" alt="Left Arrow">
+                    </button>
+                    <div class="reviews__index">
+                        <span>01</span> / <span>08</span>
+                    </div>
+                    <button class="reviews__arrow reviews__arrow--right">
+                        <img src="plus/rightarrow.jpg" alt="Right Arrow">
+                    </button>
+                </div>
+            </div>
+            <!-- Все отзывы, скрытые по умолчанию -->
+            <div class="reviews__item review--hidden">
+                <img src="plus/logo_2.png" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Мы благодарим Сергея за создание нашего нового супер пупер современного сайта. Важно было передать всю изысканность и стиль серебряных украшений, и вы отлично справились с этой задачей. Сайт получился элегантным, с удобной навигацией и привлекательным дизайном, который прекрасно отображает наш бренд. Особенно ценим ваш профессионализм и оперативность в работе. Желаем вам дальнейших успехов!</p>
+                    <h3>С уважением, Екатерина Романова, ген. директор компании «Serebro.Ag»</h3>
+                </div>
+            </div>
+            <!-- Продолжайте добавлять отзывы -->
+            <div class="reviews__item review--hidden">
+                <img src="plus/logo-estee.png" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Сергей и его команда проделали великолепную работу по разработке нашего сайта. Мы обратились с достаточно сложным проектом, включающим интерактивное портфолио и оригинальные дизайнерские элементы, и результат превзошел все ожидания. Сайт получился стильным, функциональным и идеально отражающим философию нашего бюро. Благодарим за внимательный подход и гибкость в работе! Рекомендуем всем, кто ценит качество и профессионализм.</p>
+                    <p>А это копия верхнего текста чтоб он казался больше</p>
+                    <p>Сергей и его команда проделали великолепную работу по разработке нашего сайта. Мы обратились с достаточно сложным проектом, включающим интерактивное портфолио и оригинальные дизайнерские элементы, и результат превзошел все ожидания. Сайт получился стильным, функциональным и идеально отражающим философию нашего бюро. Благодарим за внимательный подход и гибкость в работе! Рекомендуем всем, кто ценит качество и профессионализм.</p>
+                    <h3>С уважением, Ольга Миронова, креативный директор дизайн-бюро «Estee»</h3>
+                </div>
+            </div>
+            <div class="reviews__item review--hidden">
+                <img src="plus/lpcma_rus_v4.jpg" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Хотим выразить благодарность Сергею за создание современного и интуитивно понятного сайта для нашей лаборатории. Особое внимание было уделено структурированию сложной информации о наших услугах, оборудовании и методах анализа, что значительно упростило работу с клиентами. Также впечатлила высокая скорость выполнения задач и чёткая коммуникация на всех этапах проекта. Спасибо за качественный результат!</p>
+                    <h3>С уважением, Дмитрий Игоревич, руководитель лаборатории физико-химических методов анализа</h3>
+                </div>
+            </div>
+            <div class="reviews__item review--hidden">
+                <img src="plus/nashagazeta_ch.png" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Спасибо огромное Сергею за профессиональный подход к разработке нашего обновленного сайта. Теперь посетители «Нашей газеты» могут с легкостью находить интересующие статьи, читать новости в удобном формате и подписываться на обновления. Особенно хотим отметить, как был реализован адаптивный дизайн — сайт выглядит прекрасно на всех устройствах. Уверены, что благодаря вам наша аудитория продолжит расти. Благодарим за плодотворное сотрудничество!</p>
+                    <h3>С уважением, Наталья Олеговна, главный редактор «Нашей газеты» https://nashagazeta.ch</h3>
+                </div>
+            </div>
+            <div class="reviews__item review--hidden">
+                <img src="plus/farbors_ru.jpg" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Хотим выразить огромную благодарность Сергею и его команде за создание нашего корпоративного сайта. Благодаря вашему профессионализму и вниманию к деталям, сайт стал не только современным и удобным для пользователей, но и помог значительно увеличить количество запросов от клиентов. Особое спасибо за помощь в оптимизации каталога стройматериалов — теперь наши клиенты могут легко находить всё, что им нужно! Успехов вам в новых проектах!</p>
+                    <p>А это копия верхнего текста чтоб он казался больше</p>
+                    <p>Хотим выразить огромную благодарность Сергею и его команде за создание нашего корпоративного сайта. Благодаря вашему профессионализму и вниманию к деталям, сайт стал не только современным и удобным для пользователей, но и помог значительно увеличить количество запросов от клиентов. Особое спасибо за помощь в оптимизации каталога стройматериалов — теперь наши клиенты могут легко находить всё, что им нужно! Успехов вам в новых проектах!</p>
+                    <h3>С уважением, Александр Александров, руководитель отдела маркетинга компании "Строймаркет"</h3>
+                </div>
+            </div>
+            <div class="reviews__item review--hidden">
+                <img src="plus/cableman_ru.png" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Искренне благодарим Сергея и его команду за разработку нашего нового сайта. Учитывая специфику нашей работы, важно было создать ресурс, который бы сочетал удобство, функциональность и современный дизайн. Вы блестяще справились с этой задачей! Каталог продукции стал интуитивно понятным, а разделы для профессионалов теперь отлично организованы. Вся работа выполнена оперативно и качественно. Желаем вам дальнейших успехов!</p>
+                    <h3>С уважением, Павел Григорьев, директор компании «Кабельщик»</h3>
+                </div>
+            </div>
+            <div class="reviews__item review--hidden">
+                <img src="plus/logo.png" alt="Logo" class="reviews__logo">
+                <div class="reviews__text">
+                    <p>Сергей — профессиональный, высококвалифицированный программист, нахождение которого можно сравнить с чудом! Очень хорошо выполняет поставленные задачи, всё сделано в срок и также быстро исправляет некоторые пожелания по сайту. Очень его рекомендую, работа с ним точно стоит того, даже не сомневайтесь!</p>
+                    <h3>С уважением, Иван Иванов, очень важная шишка очень важной выдуманной компании "Personal Writer"</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML: Галерея с Slick Slider -->
+    
+    <section class="clients-gallery">
+        <h2 class="clients-gallery__title">С нами работают</h2>
+        <p class="clients-gallery__description">Наши клиенты — это компании, которым мы предоставляем качественные услуги.</p>
+
+        <div class="clients-gallery__slider">
+            <div class="clients-gallery__row">
+                <div class="clients-gallery__item"><img src="plus/cableman_ru.png" alt="Client 1"></div>
+                <div class="clients-gallery__item"><img src="plus/logo-estee.png" alt="Client 2"></div>
+                <div class="clients-gallery__item"><img src="plus/logo_2.png" alt="Client 3"></div>
+                <div class="clients-gallery__item"><img src="plus/logo_0.png" alt="Client 4"></div>
+                <div class="clients-gallery__item"><img src="plus/logo-estee.png" alt="Client 5"></div>
+                <div class="clients-gallery__item"><img src="plus/logo_2.png" alt="Client 6"></div>
+            </div>
+            <div class="clients-gallery__row">
+                <div class="clients-gallery__item"><img src="plus/cableman_ru.png" alt="Client 7"></div>
+                <div class="clients-gallery__item"><img src="plus/logo.png" alt="Client 8"></div>
+                <div class="clients-gallery__item"><img src="plus/farbors_ru.jpg" alt="Client 9"></div>
+                <div class="clients-gallery__item"><img src="plus/nashagazeta_ch.png" alt="Client 10"></div>
+                <div class="clients-gallery__item"><img src="plus/logo.png" alt="Client 11"></div>
+                <div class="clients-gallery__item"><img src="plus/cableman_ru.png" alt="Client 12"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+</html>

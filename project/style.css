@@ -1,0 +1,1077 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Шапка */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    margin-top: 30px;
+    margin-left: -120px;
+    width: 170px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    margin-top: 34px;
+    margin-left: 50px;
+}
+
+.nav li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav .arrow {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.nav a:hover {
+    color: #ff5722;
+}
+
+/* Выпадающее меню */
+.has-dropdown .dropdown {
+    margin: 0;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;
+    z-index: 10;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown li {
+    padding: 15px 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown li:first-child {
+    border-top: none;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown a {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
+/* Главный блок с видео */
+.hero {
+    position: relative;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+/* Содержимое поверх видео */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.hero-heading {
+    position: relative;
+    text-align: left;
+    max-width: 50%;
+    margin: 110px;
+}
+
+.hero-heading h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero-heading p {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.hero-heading .btn {
+    margin-top: 40px;
+    padding: 25px 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: 2px solid #e64a19;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.hero-heading .btn:hover {
+    background-color: #e64a19;
+    color: #fff;
+}
+
+.hero-stats {
+    display: grid; /* Используем сетку для красивого расположения */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Автоматическое размещение по колонкам */
+    gap: 2rem; /* Отступы между элементами */
+    text-align: left;
+    margin: 100px auto; /* Центрируем блок */
+    max-width: 800px; /* Ограничиваем ширину */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 20px;
+    border-left: 4px solid #e64a19; /* Оранжевая граница слева */
+    position: relative;
+    background: rgba(0, 0, 0, 0.3); /* Лёгкий фон для карточек */
+}
+
+.stat-item h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Отступ между заголовком и текстом */
+}
+
+.stat-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.stat-item img {
+    position: absolute;
+    right: 130px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Бургер-меню */
+.menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/**/
+.drupal-expertise {
+    padding: 50px 0;
+    background-color: #fff; /* Фон белый, если требуется */
+    color: #000; /* Текст черный, чтобы соответствовать */
+    text-align: left;
+}
+
+.drupal-expertise .expertise-header {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.expertise-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.expertise-header h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.expertise-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 100px;
+}
+
+.expertise-item {
+    max-width: 220px; /* Ограничение ширины */
+    text-align: left;
+}
+.skrit {
+    display: inline;
+}
+.photo {
+    display: block;
+    position: absolute;
+    margin-top: -80px;
+    margin-left:30px;
+}
+.expertise-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.expertise-item h3 {
+    font-size: 15px;
+    color: #000;
+}
+/**/
+.support-section {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Устанавливаем секцию выше черного фона */
+    padding-bottom: 0; /* Убираем отступы снизу */
+}
+
+.support-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2a2a2a;
+}
+
+.support-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.support-block {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative; /* Для позиционирования дочерних элементов */
+    overflow: hidden; /* Чтобы часть иконки могла скрываться за пределами блока */
+}
+
+.support-block .number {
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+
+}
+
+.support-block .icon {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: -4px; /* Смещение вниз */
+    right: -4px; /* Смещение вправо */
+    z-index: 1; /* Убедимся, что иконка поверх остальных элементов */
+}
+
+.support-block .icon img {
+    width: 60px; /* Размер иконки */
+    height: 60px;
+}
+
+.support-block h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.support-block p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    position: relative;
+}
+/* === Общая стилизация секции === */
+.expertise-section {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    background-color: #2e2e2e; /* Черный фон */  
+    margin-top: -50px; /* Сдвигаем секцию вверх для плавного совмещения */
+}
+.expertise-section::before {
+    content: "";
+    position: absolute;
+    top: -100px; /* Поднимаем черный фон выше секции */
+    left: 0;
+    right: 0;
+    height: 150px; /* Высота выступающего фона */
+    background-color: #2e2e2e; /* Цвет должен совпадать с основным фоном */
+    z-index: -1; /* Фон остается позади остальных элементов */
+}
+/* Контейнер для содержимого */
+.expertise-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Ограничиваем ширину секции */
+    width: 100%;
+    gap: 20px; /* Расстояние между текстом и изображением */
+}
+
+/* === Текстовый блок === */
+.expertise-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    transform: translateX(400px);
+}
+
+.expertise-row {
+    display: flex;
+    gap: 22px; /* Отступ между блоками */
+    padding-top: 20px;
+}
+
+.expertise-item2 {
+    flex: 1; /* Равное распределение ширины */
+    background-color: rgba(0, 0, 0, 0.1); /* Лёгкий фон для блоков */
+    border-left: 2px solid #ff4500; /* Оранжевая граница слева */
+    padding: 20px; /* Внутренние отступы */
+    color: #fff;
+    text-align: left;
+}
+
+.expertise-blocks h3 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.expertise-item2 p {
+    font-size: 15px;
+}
+.expertise-item2 a {
+    color: #ff4500;
+}
+
+/* === Блок изображения === */
+.expertise-image {
+    max-width: 45%; /* Устанавливаем ширину для изображения */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    position: relative;
+}
+
+.expertise-image img {
+    max-width: 100%; /* Изображение адаптируется по контейнеру */
+    height: auto; /* Сохраняем пропорции */
+    transform: scale(1.2);
+}
+
+/* === Совмещение с секцией поддержки === */
+
+/* Заголовок секции */
+.tariff-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+/* Общая стилизация секции */
+.tariff-section {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+.tariff-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tariff-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяет содержимое */
+    align-items: center; /* Центрирует по горизонтали */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px 20px; /* Отступ сверху увеличен */
+    flex: 0 0 350px;
+    text-align: left;
+    height: 100%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tariff-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок тарифа */
+.tariff-card h3 {
+    font-size: 24px;
+    color: #ff4500;
+    margin-top: 10px; /* Уменьшенный отступ сверху */
+    margin-bottom: 5px; /* Уменьшенный отступ снизу */}
+
+/* Разделительная полоска под заголовком */
+.tariff-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #d1d1d1; /* Оранжевый цвет полоски */
+    margin: 25px 0px; /* Отступы сверху и снизу */
+}
+
+/* Список с описанием */
+.tariff-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.tariff-card ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+.tariff-item li {
+    display: flex;
+    align-items: flex-start; /* Текст выравнивается по верхней границе галочки */
+    gap: 10px; /* Расстояние между галочкой и текстом */
+    margin-bottom: 20px; /* Отступ между строками */
+}
+
+/* Оранжевая галочка */
+.checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.checkmark::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    border: solid #ff4500;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    top: 2px;
+    left: 5px;
+}
+/* Кнопка с границей */
+.tariff-card .button {
+    display: block;
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    text-align: center;
+    border: 2px solid #ff4500; /* Оранжевая граница */
+    border-radius: 8px;
+    color: #ff4500;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tariff-card .button:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+.tariff-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #333;
+}
+
+.tariff-footer p {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.tariff-footer .custom-tariff-link {
+    display: inline-block;
+    color: #ff4500;
+    font-weight: 600;
+    border-bottom: 1px solid #ff4500;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.tariff-footer .custom-tariff-link:hover {
+    color: #d13a00;
+    border-color: #d13a00;
+}
+/**/
+.developers-section {
+    padding: 50px 380px;
+    text-align: left;
+
+    background-color: #fff;
+}
+
+.developers-title {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.developers-container {
+    display: flex;
+    justify-content: left;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.developer-task {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 200px;
+    text-align: left;
+}
+
+.developer-task img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.task-time {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    font-size: 16px;
+    color: #333;
+}
+/**//* Стили для секции "Команда" */
+.team-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.team-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.team-row-second {
+    display: flex;
+    margin-right: 300px;
+    gap: 50px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 250px; /* Увеличенная ширина */
+    text-align: left;
+}
+
+.team-card img {
+    width: 250px; /* Увеличен размер фотографий */
+    height: 260px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+}
+
+.team-card p {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 320px; /* Увеличена ширина текста */
+}
+
+.team-button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px 70px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-button:hover {
+    background-color: #ff4500;
+}
+
+/**/
+/* Стили для секции "Последние кейсы" */
+.cases-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cases-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.cases-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1024px; /* Общая ширина для выравнивания краёв */
+    height: 400px;
+}
+.row a:hover {
+    text-decoration: underline;
+}
+.case-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.case-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.case-text h3 {
+    font-size: 15px;
+    margin: 0 20px 0px;
+}
+.case-text p {
+    font-size: 14px;
+    margin: 0 20px 0;
+    font-weight: 100;
+}
+
+.case-item:hover .case-text {
+    background: rgba(0, 0, 0, 0.8);
+}
+.case-with-text-below {
+    height: auto; /* Высота зависит от контента */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.case-text-below {
+    position: relative;
+    color: #000;
+    text-align: left;
+    padding: 40px;
+    width: 330px;
+}
+.link {
+    color: #0000EE;
+}
+.case-text-below h3 {
+    font-size: 17px;
+    padding: -10px;
+
+}
+.case-text-below h2 {
+    font-size: 14px;
+    font-weight: 200;
+    color: #000;
+    margin-bottom: 10px;
+
+}
+.case-text-below p {
+    font-size: 14px;
+    margin: 0;
+}
+.case-with-another {
+    width: 324px;
+}
+
+.case-img {
+    height: 140px;
+    width: 100%;
+
+}
+.case-img2 {
+    width: 694px;
+}
+
+/**/
+.reviews {
+    position: relative;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.reviews__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.reviews__container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden; /* Скрываем содержимое, выходящее за рамки */
+    height: 630px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #e6e6e6;
+}
+
+.reviews__content {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    max-width: 900px;
+    width: 100%;
+}
+
+.reviews__logo-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.reviews__logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 0; /* Убираем дополнительные отступы слева */
+}
+.reviews__text {
+    margin: 0; /* Убираем лишние отступы */
+    padding: 0; /* Гарантируем отсутствие дополнительных отступов */
+}
+
+.reviews__text p {
+    margin: 0 0 10px; /* Нижний отступ для текста */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+    max-width: 500px;
+}
+
+.reviews__text h3 {
+    margin: 10px 0 0; /* Верхний отступ у заголовка */
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 400px;
+}
+
+.reviews__line {
+    width: 1px;
+    height: 87%;
+    margin-left: 600px;
+    margin-top: 30px;
+    background: url("plus/chert.png") no-repeat center/contain;
+}
+.reviews__title::before {
+    content: url("plus/quote.png");
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 100px; /* Определяем необходимый размер */
+    height: auto; /* Поддержка пропорциональности */
+}
+.reviews__controls {
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+
+.reviews__arrow {
+    margin:0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.reviews__index {
+    font-size: 14px;
+    color: #888;
+    margin: 0 10px;
+}
+
+.reviews__item {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+
+    padding: 30px 20px; /* Единый отступ для всех отзывов */
+    opacity: 0;
+}
+
+.reviews__item.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+.review--hidden {
+    opacity: 0;
+    padding: 50px 50px; /* Единый отступ для всех отзывов */
+}
+.reviews__arrow {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer; /* Указывает, что элемент кликабелен */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease; /* Добавляет эффект */
+    position: relative;
+    z-index: 10; /* Поднимает кнопки над другими элементами */
+}
+
+.reviews__arrow img {
+    width: 24px; /* Увеличиваем размеры изображений */
+    height: auto;
+}
+
+.reviews__arrow:hover {
+    transform: scale(1.1); /* Лёгкое увеличение при наведении */
+}
+
+
+.reviews__item--slide-left-out {
+    transform: translateX(-100%); /* Уходит влево */
+    opacity: 0;
+    transition: transform 0.7 ease, opacity 0.7s ease;
+}
+
+.reviews__item--slide-left-in {
+    transform: translateX(0); /* Появляется с правой стороны */
+    opacity: 1;
+    display: flex;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.reviews__item--slide-right-out {
+    transform: translateX(100%); /* Уходит вправо */
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.reviews__item--slide-right-in {
+    transform: translateX(0); /* Появляется с левой стороны */
+    opacity: 1;
+    display: flex;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+/**/
+.clients-gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.clients-gallery__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.clients-gallery__description {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.clients-gallery__slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients-gallery__row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ensure rows are horizontal */
+    margin-bottom: 20px;
+}
+
+.clients-gallery__item {
+    width: 16.66%; /* 6 items per row, each taking 1/6th of the row width */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border: 1px solid #ddd; /* Slight border around images */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center image within block */
+}
+
+.clients-gallery__item img {
+    width: 100%; /* Full image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Стили для иконки меню (бургер-меню) */
+    .menu-btn {
+        display: block;  /* Показываем иконку меню на мобильных устройствах */
+    }
+
+    /* Скрываем меню по умолчанию */
+    .nav ul {
+        display: none;  /* Скрыто по умолчанию */
+        flex-direction: column;  /* Вертикальное расположение элементов меню */
+        width: 100%;  /* Ширина меню на 100% */
+    }
+
+    /* Показываем меню, если оно активировано (например, при клике на бургер-меню) */
+    .nav.active ul {
+        display: block;  /* Показываем меню */
+    }
+
+    /* Пункты меню на мобильных устройствах */
+    .nav li {
+        width: 100%;  /* Каждый пункт меню занимает всю ширину экрана */
+        text-align: center;  /* Центрируем текст внутри пунктов */
+    }
+
+    /* Стили для ссылок в меню */
+    .nav li a {
+        padding: 15px;  /* Увеличенные отступы для удобства клика */
+    }
+}
