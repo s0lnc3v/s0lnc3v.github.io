@@ -24,6 +24,7 @@ ul {
     display: flex;
     align-items: center;
 }
+
 .header {
     position: absolute;
     display: flex;
@@ -163,7 +164,6 @@ ul {
 }
 .hero-heading .btn:hover {
     background-color: #e64a19;
-    color: #fff;
 }
 .hero-stats {
     display: grid;
@@ -171,7 +171,6 @@ ul {
     gap: 2rem;
     text-align: left;
     margin: 100px auto;
-    max-width: 800px;
 }
 .stat-item {
     display: flex;
@@ -746,6 +745,9 @@ ul {
     padding: 50px 20px;
     text-align: left;
 }
+.reviews__index {
+    color: #000;
+}
 .reviews__title {
     font-size: 36px;
     margin-bottom: 40px;
@@ -950,7 +952,6 @@ ul {
     object-fit: contain;
 }
 
-
 .faq {
     padding: 40px 0;
     color: #000;
@@ -959,116 +960,269 @@ ul {
 .faq .faq-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .faq h2 {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
-
-.faq-item {
-    margin-bottom: 20px;
-}
-
 .faq-question {
     border: none;
-    padding: 15px;
+    padding: 10px;
     width: 100%;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 20px;
     cursor: pointer;
     background-color: #fff;
 }
+.faq-question a {
+    font-size: 12px;
+    font-weight: 100; /* уменьшить жирность номера */
+    margin-right: 5px; /* добавим отступ между номером и вопросом */
+    color: #c7c7c7;
+}
 
+.faq-question p {
+    display: inline; /* вопрос и номер будут в одной строке */
+    font-size: 17px;
+    font-weight: 600; /* стандартная жирность для текста вопроса */
+}
 .faq-answer {
     display: none;
     padding: 15px;
     font-size: 1em;
 }
-
 .faq-item.active .faq-answer {
     display: block;
 }
+.faq-item.active {
+    border: 2px solid #e64a19;
+}
+.faq-item.active .faq-question {
+    color: #e64a19;
+}
+.site-support-section {
+    padding: 50px;
+    padding-left: 350px;
+    text-align: left;
+    background-image: url('plus/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
+.titlee {
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.site-support-section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.site-support-section p {
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.site-support-section form {
+    max-width: 500px;
+    position: relative;
+    top: -500px; /* Сдвиг вверх */
+    left: 650px; /* Сдвиг вправо */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.site-support-section form input,
+.site-support-section form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.site-support-section form input::placeholder,
+.site-support-section form textarea::placeholder {
+    color: #fff;
+}
+
+.site-support-section form input[type="checkbox"],
+.site-support-section .captcha-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.site-support-section form .submit-btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.site-support-section form .submit-btn:hover {
+    background-color: #e64e2a;
+}
+
+.site-support-section .contact-info {
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.site-support-section .contact-info a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-weight: 600;
+}
+
+.site-support-section .social-links {
+    margin-top: 20px;
+    text-align: left;
+    position: relative; /* Для позиционирования */
+    top: -150px; /* Поднимаем секцию ссылок ближе к основной части */
+    left: -10px;
+}
+.full-width-line {
+    height: 1px;
+    width: 100%; 
+    left: 0;
+    position: absolute;
+    margin-top: -220px;
+    background: rgba(256, 256, 256, 0.3);
+}
+
+.site-support-section .social-links a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    color: #ff5733;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.site-support-section .social-links a:hover {
+    color: #e64e2a;
+}
+
+.site-support-section .social-logo {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.site-support-section .footer {
+    margin-top: 20px; /* Уменьшаем отступ сверху */
+    position: relative; /* Для позиционирования */
+    top: -150px; /* Поднимаем футер ближе к основной части */
+    font-size: 15px;
+}
 
 
 @media (max-width: 768px) {
 
+    /* Для меню */
     .nav {
-        display: none; 
         flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .nav.active {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: block; 
-        cursor: pointer;
-    }
-
-    .menu-btn span {
-        background-color: #333;
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
+        color: #fff;
     }
 
     .nav ul {
-        padding: 0;
-        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: #000;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .nav ul li {
-        list-style: none;
-        width: 100%;
-        text-align: center;
-        padding: 15px 0;
-    }
-
-    .nav ul li a {
-        text-decoration: none;
-        color: #333;
-        font-size: 18px;
-    }
-
-    .content {
-        padding: 15px;
-    }
-
-    .content h1 {
-        font-size: 24px;
+    .logo {
         text-align: center;
     }
 
-    .content p {
-        font-size: 16px; 
-        line-height: 1.6;
+    .hero-stats {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .content img {
+    .stat-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .hero-video {
         width: 100%;
-        height: auto;
+    }
+
+    .menu-btn {
         display: block;
-        margin: 0 auto;
-    }
-
-    .btn {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-        background-color: #4CAF50;
-        color: white;
-        font-size: 18px;
-        border: none;
         cursor: pointer;
-        margin-top: 20px;
     }
+
+    .developers-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developers-section .developer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-stats {
+        flex-direction: column; /* Статистику отображаем вертикально */
+        align-items: center;
+    }
+
+    .stat-item {
+        flex: 1 1 100%; /* Каждая карточка занимает всю ширину */
+        text-align: center;
+    }
+    
+    .team-row {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: column; 
+    }
+
+    .team-row-second {
+        display: flex;
+        margin-right: 300px;
+        gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: column; 
+    }
+    .site-support-section {
+        padding: 0;
+        padding: 10px;
+    }
+    .site-support-section form {
+    max-width: 500px;
+    position: relative;
+    top: 0px; /* Сдвиг вверх */
+    left: 20px; /* Сдвиг вправо */
+    padding: 20px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+}
 }
