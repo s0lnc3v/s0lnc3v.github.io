@@ -591,11 +591,6 @@ ul {
     justify-content: center;
     gap: 50px;
 }
-.team-row-second {
-    display: flex;
-    margin-right: 300px;
-    gap: 50px;
-}
 
 .team-card {
     display: flex;
@@ -745,16 +740,16 @@ ul {
     padding: 50px 20px;
     text-align: left;
 }
-.reviews__index {
+.reviews_index {
     color: #000;
 }
-.reviews__title {
+.reviews_title {
     font-size: 36px;
     margin-bottom: 40px;
     color: #000;
     text-align: center;
 }
-.reviews__container {
+.reviews_container {
     position: relative;
     width: 100%;
     max-width: 900px;
@@ -765,7 +760,7 @@ ul {
     border-radius: 8px;
     box-shadow: 0 0 20px #e6e6e6;
 }
-.reviews__content {
+.reviews_content {
     display: flex;
     align-items: left;
     justify-content: space-between;
@@ -777,22 +772,22 @@ ul {
     max-width: 900px;
     width: 100%;
 }
-.reviews__logo-text {
+.reviews_logo-text {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.reviews__logo {
+.reviews_logo {
     width: 80px;
     height: auto;
     margin-bottom: 20px;
     margin-left: 0;
 }
-.reviews__text {
+.reviews_text {
     margin: 0;
     padding: 0;
 }
-.reviews__text p {
+.reviews_text p {
     margin: 0 0 10px;
     font-size: 14px;
     font-weight: 600;
@@ -800,21 +795,21 @@ ul {
     color: #000;
     max-width: 500px;
 }
-.reviews__text h3 {
+.reviews_text h3 {
     margin: 10px 0 0;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
     text-align: left;
     max-width: 400px;
 }
-.reviews__line {
+.reviews_line {
     width: 1px;
     height: 87%;
     margin-left: 600px;
     margin-top: 30px;
     background: url("plus/chert.png") no-repeat center/contain;
 }
-.reviews__title::before {
+.reviews_title::before {
     content: url("plus/quote.png");
     position: absolute;
     left: 10px;
@@ -822,12 +817,12 @@ ul {
     width: 100px;
     height: auto;
 }
-.reviews__controls {
+.reviews_controls {
     display: flex;
     align-items: center;
     margin:0;
 }
-.reviews__arrow {
+.reviews_arrow {
     margin:0;
     padding: 10px;
     cursor: pointer;
@@ -838,14 +833,14 @@ ul {
     position: relative;
     z-index: 10;
 }
-.reviews__arrow img {
+.reviews_arrow img {
     width: 24px;
     height: auto;
 }
-.reviews__arrow:hover {
+.reviews_arrow:hover {
     transform: scale(1.1);
 }
-.reviews__item {
+.reviews_item {
     position: absolute;
     width: 100%;
     height: auto;
@@ -858,7 +853,7 @@ ul {
     padding: 30px 20px;
     opacity: 0;
 }
-.reviews__item.active {
+.reviews_item.active {
     display: flex;
     opacity: 1;
     transform: translateX(0);
@@ -867,7 +862,7 @@ ul {
     opacity: 0;
     padding: 50px 50px;
 }
-.reviews__arrow {
+.reviews_arrow {
     background: none;
     border: none;
     padding: 10px;
@@ -879,30 +874,30 @@ ul {
     position: relative;
     z-index: 10;
 }
-.reviews__arrow img {
+.reviews_arrow img {
     width: 24px;
     height: auto;
 }
-.reviews__arrow:hover {
+.reviews_arrow:hover {
     transform: scale(1.1);
 }
-.reviews__item--slide-left-out {
+.reviews_item--slide-left-out {
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.7s ease, opacity 0.7s ease;
 }
-.reviews__item--slide-left-in {
+.reviews_item--slide-left-in {
     transform: translateX(0);
     opacity: 1;
     display: flex;
     transition: transform 0.7s ease, opacity 0.7s ease;
 }
-.reviews__item--slide-right-out {
+.reviews_item--slide-right-out {
     transform: translateX(100%);
     opacity: 0;
     transition: transform 0.7s ease, opacity 0.7s ease;
 }
-.reviews__item--slide-right-in {
+.reviews_item--slide-right-in {
     transform: translateX(0);
     opacity: 1;
     display: flex;
@@ -912,26 +907,26 @@ ul {
     text-align: center;
     color: #000;
 }
-.clients-gallery__title {
+.clients-gallery_title {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.clients-gallery__description {
+.clients-gallery_description {
     font-size: 18px;
     margin-bottom: 60px;
 }
-.clients-gallery__slider {
+.clients-gallery_slider {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.clients-gallery__row {
-    display: flex !important;
+.clients-gallery_row {
+    display: flex;
     justify-content: space-around;
     gap: 10px;
 }
-.clients-gallery__item {
+.clients-gallery_item {
     display: flex;
     width: 150px;
     height: 150px;
@@ -939,14 +934,14 @@ ul {
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    padding-left: 80px;
+    padding-left: 50px;
     padding-top: 50px;
     margin: 0 100px;
 }
 .slick-slide {
     margin: 0 10px;
 }
-.clients-gallery__item img {
+.clients-gallery_item img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -977,22 +972,16 @@ ul {
     cursor: pointer;
     background-color: #fff;
 }
-.faq-question a {
-    font-size: 12px;
-    font-weight: 100; /* уменьшить жирность номера */
-    margin-right: 5px; /* добавим отступ между номером и вопросом */
-    color: #c7c7c7;
-}
 
 .faq-question p {
-    display: inline; /* вопрос и номер будут в одной строке */
-    font-size: 17px;
-    font-weight: 600; /* стандартная жирность для текста вопроса */
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
 }
 .faq-answer {
     display: none;
     padding: 15px;
-    font-size: 1em;
+    font-size: 16px;
 }
 .faq-item.active .faq-answer {
     display: block;
@@ -1033,8 +1022,8 @@ ul {
 .site-support-section form {
     max-width: 500px;
     position: relative;
-    top: -500px; /* Сдвиг вверх */
-    left: 650px; /* Сдвиг вправо */
+    top: -500px; 
+    left: 650px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -1060,9 +1049,8 @@ ul {
 .site-support-section .captcha-container input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 0;
     margin-right: 10px;
-    vertical-align: middle;
 }
 
 .site-support-section form .submit-btn {
@@ -1098,8 +1086,8 @@ ul {
 .site-support-section .social-links {
     margin-top: 20px;
     text-align: left;
-    position: relative; /* Для позиционирования */
-    top: -150px; /* Поднимаем секцию ссылок ближе к основной части */
+    position: relative;
+    top: -150px; 
     left: -10px;
 }
 .full-width-line {
@@ -1131,9 +1119,9 @@ ul {
 }
 
 .site-support-section .footer {
-    margin-top: 20px; /* Уменьшаем отступ сверху */
-    position: relative; /* Для позиционирования */
-    top: -150px; /* Поднимаем футер ближе к основной части */
+    margin-top: 20px;
+    position: relative;
+    top: -150px;
     font-size: 15px;
 }
 
@@ -1177,23 +1165,13 @@ ul {
         cursor: pointer;
     }
 
-    .developers-section {
+    .hero-stats {
         flex-direction: column;
         align-items: center;
     }
 
-    .developers-section .developer-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .hero-stats {
-        flex-direction: column; /* Статистику отображаем вертикально */
-        align-items: center;
-    }
-
     .stat-item {
-        flex: 1 1 100%; /* Каждая карточка занимает всю ширину */
+        flex: 1 1 100%; 
         text-align: center;
     }
     
@@ -1202,27 +1180,44 @@ ul {
         justify-content: center;
         gap: 50px;
         flex-wrap: wrap;
-        flex-direction: column; 
-    }
-
-    .team-row-second {
-        display: flex;
-        margin-right: 300px;
-        gap: 50px;
-        flex-wrap: wrap;
-        flex-direction: column; 
     }
     .site-support-section {
         padding: 0;
         padding: 10px;
     }
     .site-support-section form {
-    max-width: 500px;
-    position: relative;
-    top: 0px; /* Сдвиг вверх */
-    left: 20px; /* Сдвиг вправо */
-    padding: 20px;
-    margin-bottom: 200px;
-    border-radius: 10px;
-}
+        max-width: 500px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+        padding: 20px;
+        margin-bottom: 200px;
+        border-radius: 10px;
+    }
+    .developers-section {
+        padding: 10%;
+    }
+    .developers-container {
+        padding-left: 40%;
+        padding-top: 30%;
+        scale: 1.5;
+    }
+    .developer-task {
+        margin-top: -30%;
+    }
+    .reviews_title::before {
+        content: url("plus/quote.png");
+        scale: 0.8;
+        left: -100px;
+    }
+    .reviews_controls {
+        margin-left: -150px;
+        align-items: flex-end
+    }
+    .clients-gallery_item {
+        padding-left: 0;
+    }
+    .expertise-blocks {
+        transform: translateX(0px);
+    }
 }
