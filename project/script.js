@@ -23,10 +23,10 @@ $(document).ready(function () {
         });
     });
 
-    const rew = document.querySelectorAll(".reviews__item");
-    const leftArrow = document.querySelector(".reviews__arrow--left");
-    const rightArrow = document.querySelector(".reviews__arrow--right");
-    const index = document.querySelector(".reviews__index span:first-child");
+    const rew = document.querySelectorAll(".reviews_item");
+    const leftArrow = document.querySelector(".reviews_arrow--left");
+    const rightArrow = document.querySelector(".reviews_arrow--right");
+    const index = document.querySelector(".reviews_index span:first-child");
 
     let curr = 0;
     document.querySelectorAll("a[href='#']").forEach(anchor => {
@@ -46,27 +46,27 @@ $(document).ready(function () {
         currentItem.classList.remove("active");
         currentItem.classList.add(
             direction === "right"
-                ? "reviews__item--slide-left-out"
-                : "reviews__item--slide-right-out"
+                ? "reviews_item--slide-left-out"
+                : "reviews_item--slide-right-out"
         );
 
         nextItem.style.display = "flex";
         nextItem.classList.add(
             direction === "right"
-                ? "reviews__item--slide-left-in"
-                : "reviews__item--slide-right-in"
+                ? "reviews_item--slide-left-in"
+                : "reviews_item--slide-right-in"
         );
 
         setTimeout(() => {
             currentItem.style.display = "none";
             currentItem.classList.remove(
-                "reviews__item--slide-left-out",
-                "reviews__item--slide-right-out"
+                "reviews_item--slide-left-out",
+                "reviews_item--slide-right-out"
             );
 
             nextItem.classList.remove(
-                "reviews__item--slide-left-in",
-                "reviews__item--slide-right-in"
+                "reviews_item--slide-left-in",
+                "reviews_item--slide-right-in"
             );
             nextItem.classList.add("active");
             curr = nextReview;
@@ -81,7 +81,7 @@ $(document).ready(function () {
     rew[curr].style.display = "flex";
 
 
-    $(".clients-gallery__row--autoplay").slick({
+    $(".clients-gallery_row--autoplay").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
@@ -104,7 +104,7 @@ $(document).ready(function () {
             },
         ],
     });
-    $(".clients-gallery__row--static").slick({
+    $(".clients-gallery_row--static").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: false,
@@ -135,10 +135,31 @@ $(document).ready(function () {
         });
     });
     $('#form').submit(function(){
-    var response = grecaptcha.getResponse();
-    if(response.length == 0) {
-        alert('Вы не прошли проверку CAPTCHA должным образом');
-        return false;
-    }
-});
+        var response = grecaptcha.getResponse();
+        if(response.length == 0) {
+            alert('Вы не прошли проверку CAPTCHA должным образом');
+            return false;
+        }
+    });
+    document.getElementById('forma').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        fetch(this.action, {
+            method: this.method,
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Заявка успешно отправлена!');
+                document.getElementById('supportForm').reset();
+            } else {
+                alert('Произошла ошибка при отправке заявки.');
+            }
+        })
+        .catch(error => {
+            console.error('Ошибка:', error);
+            alert('Произошла ошибка при отправке данных.');
+        });
+    });
 });
