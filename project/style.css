@@ -970,14 +970,12 @@ ul {
     text-align: left;
     font-size: 20px;
     cursor: pointer;
-    background-color: #fff;
-}
-
-.faq-question p {
+    background-color: #fff;    
     display: inline;
     font-size: 18px;
     font-weight: 600;
 }
+
 .faq-answer {
     display: none;
     padding: 15px;
