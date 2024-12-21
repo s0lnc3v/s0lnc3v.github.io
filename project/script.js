@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    document.querySelectorAll("a[href='#']").forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+        });
+    });
     const menuButton = document.querySelector(".menu-btn");
     const navMenu = document.querySelector(".nav");
     const dropdownToggles = document.querySelectorAll(".has-dropdown > a");
@@ -29,12 +34,6 @@ $(document).ready(function () {
     const index = document.querySelector(".reviews_index span:first-child");
 
     let curr = 0;
-    document.querySelectorAll("a[href='#']").forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-        });
-    });
-
     function updateActiveReview(direction) {
         const currentItem = rew[curr];
         const nextReview =
@@ -134,14 +133,15 @@ $(document).ready(function () {
             faqItem.classList.toggle("active");
         });
     });
-    $('#form').submit(function(){
+    $("#form").submit(function(){
         var response = grecaptcha.getResponse();
         if(response.length == 0) {
-            alert('Вы не прошли проверку CAPTCHA должным образом');
+            alert("Вы не прошли проверку CAPTCHA должным образом");
             return false;
         }
     });
-    document.getElementById('forma').addEventListener('submit', function(event) {
+    const forma = document.getElementById("forma");
+    forma.addEventListener("submit", function(event) {
         event.preventDefault();
         const formData = new FormData(this);
         fetch(this.action, {
@@ -151,15 +151,15 @@ $(document).ready(function () {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                alert('Заявка успешно отправлена!');
-                document.getElementById('supportForm').reset();
+                alert("Заявка успешно отправлена!");
+                document.getElementById("supportForm").reset();
             } else {
-                alert('Произошла ошибка при отправке заявки.');
+                alert("Произошла ошибка при отправке заявки.");
             }
         })
         .catch(error => {
-            console.error('Ошибка:', error);
-            alert('Произошла ошибка при отправке данных.');
+            console.error("Ошибка:", error);
+            alert("Произошла ошибка при отправке данных.");
         });
     });
 });
